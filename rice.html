@@ -9,7 +9,13 @@
         <style>
             div.divtitle { padding-top: 25px; }
             div.divtrial { padding-top: 10px; padding-bottom: 10px; }
-            .category-header { margin-top: 28px; margin-bottom: 10px; }
+            .category-block { width: 100%; margin-top: 28px; }
+            .category-block h3 { margin-bottom: 10px; }
+            .rice-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; width: 100%; }
+            .rice-grid .divtrial { padding-top: 0; padding-bottom: 0; }
+            .rice-grid .work-item { margin: 0; }
+            .rice-grid .work-item h4 { margin-bottom: 8px; font-size: 1rem; }
+            .rice-grid video { width: 100%; height: auto; display: block; }
         </style>
     </head>
     <body class="is-preload">
@@ -33,90 +39,110 @@
                     </div>
 
                     <div class="row">
-                        <h3>Initial 20</h3>
-                        <p>  </p>
-                        <script>
-                            for (let i = 1; i <= 10; i++) {
-                                document.write(`
-                                    <div class="divtrial">
-                                        <article class="col-4 col-12-xsmall work-item">
-                                            <h3>rice trail ${i}</h3>
-                                            <video width="320" height="240" controls>
-                                                <source src="videos/rice_20_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
-                                            </video>
-                                        </article>
-                                    </div>
-                                `);
-                            }
-                        </script>
+                        <div class="category-block">
+                            <h3>Initial 20</h3>
+                            <p></p>
+                            <div class="rice-grid">
+                                <script>
+                                    for (let i = 1; i <= 10; i++) {
+                                        document.write(`
+                                            <div class="divtrial">
+                                                <article class="col-4 col-12-xsmall work-item">
+                                                    <h4>rice trail ${i}</h4>
+                                                    <video controls>
+                                                        <source src="videos/rice_20_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
+                                                    </video>
+                                                </article>
+                                            </div>
+                                        `);
+                                    }
+                                </script>
+                            </div>
+                        </div>
 
-                        <h3>Initial 40</h3>
-                        <p>  </p>
-                        <script>
-                            for (let i = 1; i <= 10; i++) {
-                                document.write(`
-                                    <div class="divtrial">
-                                        <article class="col-4 col-12-xsmall work-item">
-                                            <h3>rice trail ${i}</h3>
-                                            <video width="320" height="240" controls>
-                                                <source src="videos/rice_40_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
-                                            </video>
-                                        </article>
-                                    </div>
-                                `);
-                            }
-                        </script>
+                        <div class="category-block">
+                            <h3>Initial 40</h3>
+                            <p></p>
+                            <div class="rice-grid">
+                                <script>
+                                    for (let i = 1; i <= 10; i++) {
+                                        document.write(`
+                                            <div class="divtrial">
+                                                <article class="col-4 col-12-xsmall work-item">
+                                                    <h4>rice trail ${i}</h4>
+                                                    <video controls>
+                                                        <source src="videos/rice_40_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
+                                                    </video>
+                                                </article>
+                                            </div>
+                                        `);
+                                    }
+                                </script>
+                            </div>
+                        </div>
 
-                        <h3>Initial 60</h3>
-                        <p>  </p>
-                        <script>
-                            for (let i = 1; i <= 10; i++) {
-                                document.write(`
-                                    <div class="divtrial">
-                                        <article class="col-4 col-12-xsmall work-item">
-                                            <h3>rice trail ${i}</h3>
-                                            <video width="320" height="240" controls>
-                                                <source src="videos/rice_60_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
-                                            </video>
-                                        </article>
-                                    </div>
-                                `);
-                            }
-                        </script>
+                        <div class="category-block">
+                            <h3>Initial 60</h3>
+                            <p></p>
+                            <div class="rice-grid">
+                                <script>
+                                    for (let i = 1; i <= 10; i++) {
+                                        document.write(`
+                                            <div class="divtrial">
+                                                <article class="col-4 col-12-xsmall work-item">
+                                                    <h4>rice trail ${i}</h4>
+                                                    <video controls>
+                                                        <source src="videos/rice_60_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
+                                                    </video>
+                                                </article>
+                                            </div>
+                                        `);
+                                    }
+                                </script>
+                            </div>
+                        </div>
 
-                        <h3>Takeover 1</h3>
-                        <p>  </p>
-                        <script>
-                            for (let i = 1; i <= 10; i++) {
-                                document.write(`
-                                    <div class="divtrial">
-                                        <article class="col-4 col-12-xsmall work-item">
-                                            <h3>rice trail ${i}</h3>
-                                            <video width="320" height="240" controls>
-                                                <source src="videos/rice_2020_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
-                                            </video>
-                                        </article>
-                                    </div>
-                                `);
-                            }
-                        </script>
+                        <div class="category-block">
+                            <h3>Takeover 1</h3>
+                            <p></p>
+                            <div class="rice-grid">
+                                <script>
+                                    for (let i = 1; i <= 10; i++) {
+                                        document.write(`
+                                            <div class="divtrial">
+                                                <article class="col-4 col-12-xsmall work-item">
+                                                    <h4>rice trail ${i}</h4>
+                                                    <video controls>
+                                                        <source src="videos/rice_2020_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
+                                                    </video>
+                                                </article>
+                                            </div>
+                                        `);
+                                    }
+                                </script>
+                            </div>
+                        </div>
 
-                        <h3>Takeover 2</h3>
-                        <p>  </p>
-                        <script>
-                            for (let i = 1; i <= 10; i++) {
-                                document.write(`
-                                    <div class="divtrial">
-                                        <article class="col-4 col-12-xsmall work-item">
-                                            <h3>rice trail ${i}</h3>
-                                            <video width="320" height="240" controls>
-                                                <source src="videos/rice_202020_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
-                                            </video>
-                                        </article>
-                                    </div>
-                                `);
-                            }
-                        </script>
+                        <div class="category-block">
+                            <h3>Takeover 2</h3>
+                            <p></p>
+                            <div class="rice-grid">
+                                <script>
+                                    for (let i = 1; i <= 10; i++) {
+                                        document.write(`
+                                            <div class="divtrial">
+                                                <article class="col-4 col-12-xsmall work-item">
+                                                    <h4>rice trail ${i}</h4>
+                                                    <video controls>
+                                                        <source src="videos/rice_202020_t${i.toString().padStart(2,'0')}.m4v" type="video/mp4">
+                                                    </video>
+                                                </article>
+                                            </div>
+                                        `);
+                                    }
+                                </script>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
